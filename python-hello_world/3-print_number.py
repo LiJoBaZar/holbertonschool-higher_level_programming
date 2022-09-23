@@ -1,6 +1,3 @@
 #!/usr/bin/python3
 number = 98
-message=' Battery street'
-print(f'{number}{message}')
-
-
+print("{:d} Battery street".format(number))
