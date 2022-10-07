@@ -1,12 +1,17 @@
 #!/usr/bin/python3
-"""Module matrix_mul
-Multiplies two matrices and returns the result.
+"""Is the "5-matrix-mul" module.
+The example module supplies one function, matrix-mul().
+>>> matrix-mul([[1, 2], [3, 4]], [[1, 2], [3, 4]])
+[[7, 10], [15, 22]]
 """
 
-
 def matrix_mul(m_a, m_b):
-    """Return the matrix resulting of
-    the multiplication of m_a and m_b."""
+    
+    """Multiplies two matrices.
+    Attributes:
+    m_a: first matrix
+    m_b: second matrix
+    Returns: The resulting matrix."""
 
    if type(m_a) is not list:
         raise TypeError('m_a must be a list')
