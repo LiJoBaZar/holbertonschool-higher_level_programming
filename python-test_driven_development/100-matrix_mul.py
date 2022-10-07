@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """
 This is the "matrix_mul" module.
 Module functions: matrix_mul(m_a, m_b).
