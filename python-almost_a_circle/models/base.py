@@ -52,45 +52,10 @@ class Base:
     @classmethod
     def load_from_file(cls):
         """returns a list of instances"""
-        filename = cls.__name__ + ".json"
+        filename = f"{cls.__name__}.json"
         try:
-            with open(filename) as f:
-                list_ = cls.from_json_string(f.read())
-                objlist = []
-                for obj in list_:
-                    objlist.append(cls.create(**obj))
-                return objlist
+            with open(filename, 'r') as f:
+                list_obj_dict = cls.from_json_string(f.read())
+                return list(map(lambda obj: cls.create(**obj), list_obj_dict))
         except:
             return []
-
-    @classmethod
-    def save_to_file_csv(cls, list_objs):
-        """save to a csv file"""
-        filename = cls.__name__ + ".csv"
-        with open(filename, "w") as f:
-            if cls.__name__ == "Rectangle":
-                fieldnames = ["id", "width", "height", "x", "y"]
-            elif cls.__name__ == "Square":
-                fieldnames = ["id", "size", "x", "y"]
-            writer = csv.DictWriter(f, fieldnames=fieldnames)
-            for obj in list_objs:
-                writer.writerow(obj.to_dictionary())
-
-    @classmethod
-    def load_from_file_csv(cls):
-        """save to a csv file"""
-        filename = cls.__name__ + ".csv"
-        list_ = []
-        with open(filename) as f:
-            if cls.__name__ == "Rectangle":
-                fieldnames = ["id", "width", "height", "x", "y"]
-            elif cls.__name__ == "Square":
-                fieldnames = ["id", "size", "x", "y"]
-            reader = csv.DictReader(f, fieldnames=fieldnames)
-            list_d = {}
-            list_d2 = []
-            for d in reader:
-                for k, v in dict(d).items():
-                    list_d[k] = int(v)
-                list_d2.append(cls.create(**list_d))
-            return list_d2
