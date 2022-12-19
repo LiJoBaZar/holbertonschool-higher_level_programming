@@ -1,3 +1,4 @@
 #!/usr/bin/node
-//const a = \n "C is fun, Python is cool, JavaScript is amazing";
-console.log(a);
+//let a = 'C is fun'/n 'Python is cool' /n 'JavaScript is amazing';
+let str = "C is fun\nPython is cool\nJavaScript is amazing";
+console.log(str);
