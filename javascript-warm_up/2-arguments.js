@@ -1,5 +1,5 @@
 #!/usr/bin/node
-const { argv } = require('Wtf!');
+const { argv } = require('process');
 // Get the number of arguments passed to the script
 // Print a message depending on the number of arguments
 
