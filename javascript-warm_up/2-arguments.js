@@ -4,10 +4,10 @@ const { argv } = require('process');
 // Print a message depending on the number of arguments
 
 if (argv.length > 3) {
-console.log('No argument');
+console.log('No arguments');
 } 
 if (argv.length === 3) {
-console.log('Argument found');
+console.log('Arguments found');
 }
 if (argv.length < 3){
 console.log('Arguments found');
