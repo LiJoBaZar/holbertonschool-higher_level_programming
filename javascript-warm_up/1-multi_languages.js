@@ -1,3 +1,3 @@
 #!/usr/bin/node
-const object = {C is fun, Python is cool, JavaScript is amazing};
-console.log(object);
+const a = \n "C is fun, Python is cool, JavaScript is amazing";
+console.log(a);
