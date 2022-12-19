@@ -2,10 +2,10 @@
 // Get the first argument passed to the script
 // Print the first argument
 
-const { firstArg } = require('process');
-if (!firstArg[2]){
+const { argv } = require('process');
+if (!argv[2]){
   console.log('No argument');
 }
-if (firstArg[2]) {
-  console.log(firstArg[2]);
+if (argv[2]) {
+  console.log(argv[2]);
 }
