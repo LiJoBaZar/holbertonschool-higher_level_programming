@@ -3,7 +3,7 @@
 // Print the first argument
 
 const { argv } = require('process');
-if (!argv[2]){
+if (!argv[2]) {
   console.log('No argument');
 }
 if (argv[2]) {
