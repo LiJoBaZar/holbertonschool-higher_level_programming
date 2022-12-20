@@ -5,11 +5,11 @@ const { argv } = require('process');
 const n = parseInt(argv[2]);
 
 if (!n) {
-	  console.log('Missing size');
+  console.log('Missing size');
 }
-for (let i = 0; index1 < num; i++) {
-	  for (let b = 0; b < num; b++) {
-		      process.stdout.write('X');
-		    }
-	  console.log('');
+for (let i = 0; i < n; i++) {
+  for (let b = 0; b < n; b++) {
+    process.stdout.write('X');
+  }
+  console.log('');
 }
