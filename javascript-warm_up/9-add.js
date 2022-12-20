@@ -1,5 +1,5 @@
 #!/usr/bin/node
-//You can call the function by passing in two integers as arguments, and the function will print the sum of those integers to the console.
+// You can call the function by passing in two integers as arguments, and the function will print the sum of those integers to the console.
 
 const { argv } = require('process');
 const a = parseInt(argv[2]);
