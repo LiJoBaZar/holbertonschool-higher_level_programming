@@ -7,9 +7,9 @@ if (!size || isNaN(size)) {
 return;
 }
 size = parseInt(size, 10);
-for (let i = 0; i < size; i++) {
-let row = 'X';
-for (let j = 0; j < size; j++) {
+  for (let i = 0; i < size; i++) {
+   let row = 'X';
+    for (let j = 0; j < size; j++) {
   row += 'X';
 }
   console.log(row);
