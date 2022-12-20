@@ -1,16 +1,15 @@
 #!/usr/bin/node
-// Tis a script in JavaScript that prints a square of a given size using the character X
+// Thi's a script in JavaScript that prints a square of a given size using the character X
 
-const size = process.argv[2];
-if (!size || isNaN(size)) {
-  console.log("Missing size");
-return;
+const { argv } = require('process');
+const n = parseInt(argv[2]);
+
+if (!n) {
+	  console.log('Missing size');
 }
-size = parseInt(size, 10);
-  for (let i = 0; i < size; i++) {
-   let row = 'X';
-    for (let j = 0; j < size; j++) {
-  row += 'X';
-}
-  console.log(row);
+for (let i = 0; index1 < num; i++) {
+	  for (let b = 0; b < num; b++) {
+		      process.stdout.write('X');
+		    }
+	  console.log('');
 }
