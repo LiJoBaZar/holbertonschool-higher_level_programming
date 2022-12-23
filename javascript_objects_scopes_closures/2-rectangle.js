@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-class Rectangle {
+class Rect {
   constructor (w, h) {
     if (w > 0 && h > 0) {
       this.width = w;
@@ -8,4 +8,4 @@ class Rectangle {
     }
   }
 }
-module.exports = Rectangle;
+module.exports = Rect;
